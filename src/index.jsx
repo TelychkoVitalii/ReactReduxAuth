@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { configureFakeBackend } from "./_helpers";
+import { configureFakeBackend, store } from "./_helpers";
+import { App } from "./App/App";
 
 configureFakeBackend();
 

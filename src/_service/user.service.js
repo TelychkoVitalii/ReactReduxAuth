@@ -56,7 +56,7 @@ function _delete(id) {
         method: 'DELETE',
         headers: authHeader(),
     };
-    fetch('/users/' + id, requestOptions).then(handleResponse);
+    return fetch('/users/' + id, requestOptions).then(handleResponse);
 }
 
 function handleResponse(response) {
